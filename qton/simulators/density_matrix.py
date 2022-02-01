@@ -387,7 +387,6 @@ class Qdensity_matrix(_Basic_qcircuit_):
         s0 = s0.replace(s0[self.num_qubits-qubit-1], '')
         s1 = s1.replace(s1[self.num_qubits-qubit-1], '')
         end = s0 + s1
-        print(start,end)
 
         self.state = self.state.reshape([2]*2*self.num_qubits)
         self.state = np.einsum(
